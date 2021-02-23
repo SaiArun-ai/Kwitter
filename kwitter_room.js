@@ -1,14 +1,16 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyB_UsrDLCCE5Fi-9Asf2JLpZqpuLCBkvuA",
-      authDomain: "kwitter-e79f1.firebaseapp.com",
-      projectId: "kwitter-e79f1",
-      storageBucket: "kwitter-e79f1.appspot.com",
-      messagingSenderId: "861072531839",
-      appId: "1:861072531839:web:1d809ae8410c85f088ba4a",
-      measurementId: "G-ELTDC7RJCE"
+      apiKey: "AIzaSyAXWTOwjExc0BlOx-0Sb5Hdejx2QzrkLis",
+      authDomain: "kwitter-417f8.firebaseapp.com",
+      databaseURL: "https://kwitter-417f8-default-rtdb.firebaseio.com",
+      projectId: "kwitter-417f8",
+      storageBucket: "kwitter-417f8.appspot.com",
+      messagingSenderId: "742706274017",
+      appId: "1:742706274017:web:799d2a5b886c88bcf821a0",
+      measurementId: "G-YH4022V19X"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
 //ADD YOUR FIREBASE LINKS HERE
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
